@@ -5,6 +5,7 @@ color green = color(0, 255, 0);
 color off = color(0, 0, 0);
 int ellipseSize = 100;
 
+
 color[] lights = new color[3];
 
 void setup() {
@@ -13,8 +14,11 @@ void setup() {
   }
   size(512, 512);
   fill(0);
+
   rect(50, 20, width-100, height-40);
   frameRate(2);
+  stroke(255);
+  strokeWeight(3);
 }
 void draw() {
   
@@ -38,8 +42,7 @@ void draw() {
       lights[2] = off;
       break;
   }
-  stroke(255);
-  strokeWeight(3);
+
   fill(lights[0]);
   ellipse(width/2, (height-40)/4, ellipseSize, ellipseSize);
   fill(lights[1]);
