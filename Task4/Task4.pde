@@ -11,8 +11,11 @@ while (i >= 0) {
     case 1: 
       println("One");
       break;
+    case 0:
+      println("Take Off!");
+      break;
+    default :
+      println(i);
   }
-  if(i == 0)
-    println("Take Off!");
   i--;
 }
