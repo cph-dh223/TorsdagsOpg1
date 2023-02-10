@@ -1,6 +1,6 @@
 int a = 0;
 int b = 0;
-if(a == 10 || b == 1 || a + b == 10) {
+if(a == 10 || b == 10 || a + b == 10) {
   println("Success!");
 } else {
   println("Failure!");
@@ -8,7 +8,7 @@ if(a == 10 || b == 1 || a + b == 10) {
 
 int min = 0;
 int max = 10;
-if(min + max > 10 || min <= 5 || max <= 5) {
+if(min + max > 10 && (min <= 5 || max <= 5)) {
   println("Success!");
 }
 
